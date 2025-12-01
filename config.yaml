@@ -1,0 +1,78 @@
+# Geo-AI Drainage Systems Configuration
+# National Geo-AI Hackathon - TechFest IIT Bombay
+
+project:
+  name: "Geo-AI Drainage Systems"
+  version: "0.1.0"
+  description: "AI/ML models for automated feature extraction and drainage system design"
+  
+data:
+  # Path to drone imagery data
+  drone_imagery_path: "./data/drone_imagery/"
+  
+  # Path to point cloud data
+  pointcloud_path: "./data/pointclouds/"
+  
+  # Output path for processed data
+  output_path: "./data/processed/"
+  
+  # Train-test split ratio
+  test_split: 0.2
+  validation_split: 0.1
+
+preprocessing:
+  # Image preprocessing parameters
+  image_size: [512, 512]
+  normalize: true
+  augmentation: true
+  
+  # Point cloud preprocessing
+  voxel_size: 0.05
+  downsample: true
+  
+model:
+  # Feature extraction model configuration
+  backbone: "resnet50"  # Options: resnet50, resnet101, efficientnet
+  pretrained: true
+  
+  # Point cloud processing model
+  pointcloud_model: "pointnet++"  # Options: pointnet, pointnet++, dgcnn
+  
+  # Drainage design model
+  drainage_model: "gcn"  # Graph Convolutional Network
+  
+training:
+  # Training hyperparameters
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping_patience: 15
+  
+  # Device configuration
+  device: "cuda"  # Options: cuda, cpu
+  num_workers: 4
+  
+  # Optimization
+  optimizer: "adam"
+  loss_function: "cross_entropy"
+  
+inference:
+  # Inference configuration
+  batch_size: 64
+  confidence_threshold: 0.7
+  nms_threshold: 0.5
+  
+visualization:
+  # Visualization settings
+  plot_training_curves: true
+  save_feature_maps: true
+  generate_drainage_maps: true
+  
+  # Output format
+  output_format: "geotiff"  # Options: geotiff, shapefiles, json
+  
+logging:
+  # Logging configuration
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  log_file: "logs/app.log"
+  log_format: "detailed"  # Options: simple, detailed
