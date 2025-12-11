@@ -2,7 +2,7 @@
 ## Theme 2: DTM Creation and Drainage Network Design for Rural Villages
 ### National Geo-AI Hackathon 2025-26
 
-**Team:** Parth Sharma  
+**Team:** Parth Bavale
 **Submission Date:** 11 December 2025  
 **Hackathon:** TechFest IIT Bombay in collaboration with Ministry of Panchayati Raj
 
@@ -233,7 +233,7 @@ For a typical 100-hectare village with 500 households:
 
 ---
 
-**Prepared by:** Parth Sharma  
+**Prepared by:** Parth Bavale  
 **Date:** December 11, 2025  
 **Version:** 1.0 (Round 1 Submission)  
 **Repository:** https://github.com/parth2152012/geo-ai-drainage-systems
