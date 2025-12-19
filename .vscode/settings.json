@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "dotenv",
+        "geopandas",
+        "Geospatial",
+        "joblib",
+        "laspy",
+        "loguru",
+        "matplotlib",
+        "numpy",
+        "opencv",
+        "plotly",
+        "pyntcloud",
+        "pyyaml",
+        "rasterio",
+        "scikit",
+        "scipy",
+        "seaborn",
+        "torchvision",
+        "tqdm"
+    ]
+}

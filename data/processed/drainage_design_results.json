@@ -1,0 +1,29 @@
+{
+  "project": {
+    "name": "Geo-AI Drainage Systems",
+    "version": "0.1.0",
+    "description": "AI/ML models for automated feature extraction and drainage system design"
+  },
+  "features_extracted": {
+    "buildings": 0.164703369140625,
+    "roads": 0.2390289306640625,
+    "water": 0.162445068359375
+  },
+  "terrain_analysis": {
+    "mean_elevation": 107.43130444040864,
+    "min_elevation": 100.0,
+    "max_elevation": 115.0,
+    "std_elevation": 3.2590042183133328,
+    "relief": 15.0,
+    "low_points_percentage": 9.77783203125
+  },
+  "drainage_design": {
+    "recommended_outlets": 50,
+    "total_channels_meters": 1280,
+    "primary_channel_slope": 0.02,
+    "secondary_channel_slope": 0.01,
+    "resilience_score": 0.75,
+    "flood_mitigation_capability": "High"
+  },
+  "status": "SUCCESS"
+}

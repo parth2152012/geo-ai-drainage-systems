@@ -1,33 +1,29 @@
-# Core ML/DL Libraries
+# Core Data Processing
 numpy==1.24.3
 pandas==2.0.3
 scipy==1.11.2
 scikit-learn==1.3.1
 
-# Deep Learning Frameworks
+# Deep Learning (pick ONE, not both)
 torch==2.0.1
 torchvision==0.15.2
-tensorflow==2.14.0
 
-# Computer Vision & Image Processing
+# Computer Vision
 opencv-python==4.8.1.78
 scikit-image==0.22.0
 Pillow==10.0.1
 
-# Point Cloud & 3D Data Processing
+# Point Cloud Processing
 pyntcloud==0.1.5
-open3d==0.17.0
 laspy==2.5.2
 
-# Geospatial & Raster Data Processing
+# Geospatial (without broken rxr)
 geopandas==0.13.2
 rasterio==1.3.8
-xarray==2023.10.1
-rxr==0.2.2
 shapely==2.0.2
 fiona==1.9.6
 
-# Data Visualization
+# Visualization
 matplotlib==3.8.1
 seaborn==0.13.0
 plotly==5.18.0
